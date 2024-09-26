@@ -1,5 +1,5 @@
 # CaffeStreet
- Creating a simple stunning landing page with only HTML/CSS and JavaScript
+ Creating a simple stunning landing page with only HTML and CSS
  
 ![Ekran görüntüsü 2024-09-26 151632](https://github.com/user-attachments/assets/20182a65-4955-4983-9cbf-6d992f063eae)
 
