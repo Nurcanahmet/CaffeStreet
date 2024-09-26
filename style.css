@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Roboto", sans-serif;
+
+}
+
+/*    header   */
+
+header {
+    background-color: #F7F7F7;
+    max-width: 1200px;
+    margin: 0px auto
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+nav ul li{
+    display: flex;
+    display: inline-block;
+    list-style: none;
+    padding: 0 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 0 5px;
+    
+}
+
+nav ul li a span{
+    color: #FF902B;
+    
+   
+}
+
+.search-cart{
+    display: flex;
+    align-items: center;
+
+}
+
+.search-cart input {
+    margin: 0 5px;
+    padding: 5px 10px;
+    color: #7E7D7A;
+    border: 1px solid #7E7D7A;
+    border-radius: 20px;
+}
+
+
+/*  section one  */
+
+.section-one{
+    margin: auto;
+    padding: 50px 25px;
+    background-color: #F6EBDA;
+
+    justify-content: space-around;
+    align-items: center;
+} 
+
+.section-one .home-page{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.img-of-home-page img{
+    max-width: fit-content;
+    max-width: 300px;
+}
+
+.home-page{
+    display: flex;
+   align-items: center;
+} 
+
+.text-of-home{
+    margin: 0 100px;
+    line-height: 1.5;
+}
+
+.text-of-home h1 span{
+    color: #FF902B;
+}
+
+.text-of-home p{
+    margin-bottom: 15px;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.text-of-home a{
+    text-decoration: none;
+    
+}
+
+.button-a{
+    padding: 5px 10px;
+    background-color: #2F2105;
+    border: 1px solid #2F2105;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1em;
+
+}
+
+.button-a img{
+    margin: -5px 10px;
+    
+}
+
+.more-menu{
+    color: #FF902B;
+    margin: 0 25px;
+}
+
+/*   section two   */
+.section-two{
+    background-color: #F7F7F7;
+
+    padding: 50px 20px;
+   
+   
+}
+
+.section-two h2{
+    padding-left: 120px;
+    margin: 50px 30px;
+}
+
+.section-two h2 span{
+    text-decoration: underline;
+    text-decoration-color: #FF902B;
+
+
+}
+
+.icon-0f-secion-two {
+    display: flex;
+    justify-content: space-around;
+    line-height: 1.5;
+}
+
+.icon-0f-secion-two h1{
+    font-size: 1.2em;
+    font-weight: 500;
+     
+}
+
+.icon-0f-secion-two p{
+    font-size: 1em;
+    font-weight: 300;
+   
+}
+
+
+/*   section three   */
+.section-three{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 1.5;
+  
+}
+.img-of-about-us{
+    padding: 50px;
+}
+
+.section-three .about{
+    padding-right: 100px;
+    
+}
+
+
+.about h1 span{
+
+    text-decoration: underline;
+    text-decoration-color: #FF902B;
+}
+
+.about p{
+    font-size: 1em;
+    font-weight: 200px;
+
+}
+
+.about button{
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: 1px solid #2F2105;
+    background-color: #2F2105;
+    color: #FF902B;
+    border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 900px){
+
+    /* Nav menüsünü dikey olarak hizala */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-one .home-page {
+      
+        flex-direction: column;
+      
+    }
+    .img-of-home-page{
+        width: 400px;
+        margin-top: 10px;
+    }
+    /* Arama ve sepet simgesini dikey hizala */
+    .search-cart {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .search-cart input {
+        width: 80%; /* Arama alanının genişliğini azalt */
+        margin-bottom: 10px; /* Arama çubuğu ve sepet simgesi arasında boşluk ekle */
+        font-size: 0.9em; /* Yazı boyutunu küçült */
+        padding: 5px; /* İçerik kenar boşluklarını ayarla */
+    }
+
+ 
+
+
+    /* Header içeriğini ortala ve küçült */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+     /* Section 1: Resim ve metni alt alta yerleştir */
+    .section-one {
+    flex-direction: column; 
+}
+
+.text-of-home {
+    margin: 20px 0;
+    text-align: center;
+}
+
+     /* Section 2: İkonları alt alta yerleştir */
+     .icon-0f-secion-two {
+     flex-direction: column;
+     align-items: center;
+}
+
+   /* Section 3: Resim ve metni alt alta yerleştir */
+   .section-three {
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-three .about {
+    padding-right: 0;
+    padding: 20px;
+}
+
+    /* Diğer gerekli CSS ayarlamaları */
+    .img-of-home-page img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .img-of-about-us img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .top-menu-of-section-four {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    .bottom-menu-of-section-four {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .span-of-menu-item span{
+        padding: 0 20px;
+       
+    }
+
+    .menu-items {
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        display: contents;
+    }
+
+    .descraption-of-menu-item {
+        padding: 0 15px;
+        font-size: 1em;
+        font-weight: 300;
+        display: flex;
+        justify-content: space-between;
+        margin: 2px 20px;
+    }
+
+     .section-two h2 {
+        padding-left: 100px;
+        margin: 50px 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .special-menu h1 {
+        font-size: 1.7em;
+        font-weight: 600;
+        padding-bottom: 20px;
+        padding-left: 200px;
+    }
+
+    .subscribe-section {
+        margin: 10px 20px;
+        padding: 100px 0;
+        border-radius: 20px;
+        line-height: 1.2;
+    }
+
+     .subscribe-section h2 {
+        font-size: 1.3em;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+
+    .subscribe-section button {
+        padding: 5px 10px;
+        border: 1px solid #2F2105;
+        border-radius: 20px;
+        background-color: #2F2105;
+        color: #fff;
+        height: 29px;
+        position: absolute;
+        left: 503px;
+    }
+
+  
+   
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 375px) {
+    /* Nav menüsü dikey ve küçük yazı boyutu */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 1em; /* Yazı boyutunu küçült */
+    }
+
+    /* Arama ve sepet kısmını dikey hizala */
+    .search-cart {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        width: 80%; /* Arama alanının genişliğini azalt */
+        margin-bottom: 10px; /* Arama çubuğu ve sepet simgesi arasında boşluk ekle */
+        font-size: 0.5em; /* Yazı boyutunu küçült */
+        padding: 5px; /* İçerik kenar boşluklarını ayarla */
+    }
+
+    .search-cart input {
+        width: 80%; /* Arama alanının genişliğini azalt */
+        margin-bottom: 10px; /* Arama çubuğu ve sepet simgesi arasında boşluk ekle */
+        font-size: 0.9em; /* Yazı boyutunu küçült */
+        padding: 5px; /* İçerik kenar boşluklarını ayarla */
+    }
+
+    /* Header içeriğini ortala ve küçült */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .special-menu h1{
+        font-size: 1.5em;
+        font-weight: 600;
+        padding-bottom: 20px;
+        padding-left: 180px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Section 1: Resim ve metni alt alta yerleştir ve küçült */
+    .section-one {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .text-of-home {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 0.9em; /* Yazı boyutunu küçült */
+    }
+
+    .img-of-home-page img {
+        max-width: 80%; /* Resmi küçült */
+        height: auto;
+    }
+
+    /* Section 2: İkonları alt alta yerleştir */
+    .icon-0f-secion-two {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Section 3: Resim ve metni alt alta yerleştir */
+    .section-three {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-three .about {
+        padding-right: 0;
+        padding: 20px;
+    }
+
+    .about h1, .about h2 {
+        font-size: 1.1em; /* Başlıkları küçült */
+    }
+
+        .top-menu-of-section-four {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+        .bottom-menu-of-section-four {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .subscribe-section {
+        margin: 10px 20px;
+        padding: 100px 0;
+        border-radius: 20px;
+        line-height: 1.2;
+    }
+
+    .subscribe-section h2 {
+        font-size: 1.3em;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+
+
+
+}
+
+
+
+/*    section four    */
+
+
+
+.section-four{
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+}
+
+.special-menu{
+    padding: 20px 40px;
+    
+}
+
+.special-menu h1{
+    font-size: 1.7em;
+    font-weight: 600;
+    padding-bottom: 20px;
+    padding-left: 180px;
+    
+}
+
+.special-menu h1 span{
+    line-height: 1.5;
+    text-decoration-line: underline;
+    text-decoration-color: #FF902B;
+}
+
+.top-menu-of-section-four{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.bottom-menu-of-section-four{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-items img{
+    border: 1px solid #F7F7F7;
+    border-radius: 10px;
+    margin: 20px;
+
+    
+}
+
+.menu-items {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius:  10px;
+   
+}
+.span-of-menu-item {
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.descraption-of-menu-item{
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+
+/*   container   */
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+
+
+
+.subscribe-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url(./imges/unsplash_ftA71vetxuo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px 50px;
+    padding: 150px 0;
+    border-radius: 20px;
+    line-height: 1.5;
+    
+    
+}
+
+.subscribe-section h2{
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+    .subscribe-section input {
+        padding: 5px 6px;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        width: 300px;
+        height: 33px;
+        position: relative;
+        top: -2px;
+    }
+
+
+    .subscribe-section button {
+        padding: 6px 10px;
+        border: 1px solid #2F2105;
+        border-radius: 20px;
+        background-color: #2F2105;
+        color: #fff;
+        height: 30px;
+        position: absolute;
+        left: 215px;
+        top: -1px;
+    }
+
+
+.input-container{
+    position: relative;
+}
+.grey {
+    background-color: #F7F7F7;
+}
+
+
+.node {
+    background-color: #F6EBDA;
+}
+
+.node-backround{
+    background: url(./imges/bg-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
